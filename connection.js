@@ -1,10 +1,12 @@
 const e = require('express')
 const mysql = require('mysql')
+require('dotenv').config();
+
 const connection = mysql.createConnection({
-    host: process.env.BD_HOST,
-    user : process.env.BD_USER,
-    password: process.env.BD_PASSWORD,
-    database: process.env.BD_NAME
+    host: process.env.DB_HOST ,
+    user : process.env.DB_USER ,
+    password: process.env.DB_PASS ,
+    database: process.env.DB_NAME
 })
 connection.connect()
 module.exports = connection
