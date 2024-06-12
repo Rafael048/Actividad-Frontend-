@@ -4,41 +4,37 @@ const AutenticationControllers = require("../Controllers/AutenticationController
 const jwt = require('jsonwebtoken')
 
 
-router.get("/login",function(req,res,next){
-  res.render("login")
+router.get("/",function(req,res,next){
+  res.render("index")
 })
 router.get("/register", function(req,res, next){
-  res.render("register")
+  res.render("registro")
 })
 router.post("/register",function(req,res,next){
   AutenticationControllers.register(req.body)
   .then((results)=>{
-    res.send(results)
-
+    console.log(results)
+    res.redirect("/")
   })
   .catch((e)=>{
     res.send(e)
   })
+})
+router.get("/login", function(req,res,next){
+  res.render("inicioSesion")
 })
 router.post("/login",function(req,res,next){
   AutenticationControllers.login(req.body)
   .then((results)=>{
     res.cookie('jwt',results)
-    res.send(results)
+    console.log(results)
+    res.redirect("/")
   })
   .catch((e)=>{
     res.send(e)
   })
 })
-router.get("/test", function(req,res,next){
-  AutenticationControllers.verify(req.cookies.jwt)
-  .then((results)=>{
-    res.send(results)
-  })
-  .catch((e)=>{
-    res.send(e)
-  })
-})
+
 router.get("/logout",function(req,res,next){
   AutenticationControllers.logout(req.cookies.jwt)
   .then(()=>{
