@@ -27,7 +27,6 @@ class AutenticationModels{
         return new Promise((resolve,reject)=>{
             const user = userData.userName
             const password = userData.password 
-            console.log(user, password)
             if(!user || !password){
                 reject(new Error("No se pueden pasar valores vacios"))
             }else{

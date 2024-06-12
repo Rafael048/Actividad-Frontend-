@@ -12,8 +12,7 @@ router.get("/register", function(req,res, next){
 })
 router.post("/register",function(req,res,next){
   AutenticationControllers.register(req.body)
-  .then((results)=>{
-    console.log(results)
+  .then(()=>{
     res.redirect("/")
   })
   .catch((e)=>{
@@ -28,10 +27,10 @@ router.post("/login",function(req,res,next){
   AutenticationControllers.login(req.body)
   .then((results)=>{
     res.cookie('jwt',results)
-    console.log(results)
     res.redirect("/")
   })
   .catch((e)=>{
+    console.error(e)
     res.redirect("/500")
   })
 })
@@ -40,9 +39,10 @@ router.get("/logout",function(req,res,next){
   AutenticationControllers.logout(req.cookies.jwt)
   .then(()=>{
     res.clearCookie("jwt")
-    res.send("Cookie Borrada")
+    res.redirect("/")
   })
   .catch((e)=>{
+    console.error(e)
     res.redirect("/500")
   })
 })
@@ -51,5 +51,14 @@ router.get("/401",function(req,res,next){
 })
 router.get("/500",function(req,res,next){
   res.render("500")
+})
+router.get("/playStation",function(req,res,next){
+AutenticationControllers.verify(req.cookies.jwt)
+.then(()=>{
+  res.render("playstation")
+})
+.catch(()=>{
+  res.redirect("/401")
+})
 })
 module.exports = router;
