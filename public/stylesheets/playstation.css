@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inter ;
+}
+
+@font-face {
+    font-family: inter;
+    src: url(fuentess/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+body{
+    display: grid;
+}
+
+header{
+    display: grid;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    height: 15vh;
+    justify-content: center;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 1vw;
+}
+
+.categories{
+    padding: 1vw 1vw;
+    text-decoration: none;
+    color: white;
+}
+
+.categories:hover{
+    border-radius: 2vw;
+    transition: all .6s ease;
+    background-color: white;
+    color: black;
+}
+
+nav > ul{
+    display: flex;
+    gap: 1vw;
+    list-style: none;
+    align-items: center;
+    
+}
+
+.button-login{
+    background-color: white;
+    padding: 1vw 1vw;
+    color:black;
+    text-align: center;
+    border-radius: 2vw;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.button-login:hover{
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    transition: all .6s ease;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    display: grid;
+    justify-items: center;
+    padding: 2vw;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 85%;
+}
+
+.colaboradores{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2vw;
+}
+.social{
+    display: grid;
+    gap: 4vh;
+}
+.nombres, .git{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto ;
+    gap: 1.5vh;
+    text-align: justify;
+}
+.icon{
+    display: flex;
+    gap: 2vw;
+}
+.nombres > a, .git > a{
+    text-decoration: none;
+    color: white;
+}
+
+.nombres>a:hover{
+    text-decoration: underline;
+}
+.git>a:hover{
+    text-decoration: underline;
+}
+
+
+section{
+    display: grid;
+    justify-items: center;
+}
+
+.title{
+    font-size: 5vw;
+    justify-content: start;
+    text-transform: uppercase;
+}
+
+.description{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    gap: 2vw;
+    height: 100vh;
+}
+
+.accesorios{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding-top: 5vh;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+}
+
+.ps5{
+    display: grid;
+    width: 80%;
+    grid-template-columns: 1fr 1fr;
+    gap: 2vw;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.img-ps5{
+    grid-area: 1/2/2/3;
+}
+
+.img-ps5:hover{
+    transform: scale(1.1);
+    transition: all .4s ease;
+    filter: drop-shadow(2px 2px 100px rgb(82, 82, 168));
+}
+
+.cards{
+    display: grid;
+    width: 68%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2vw;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card{
+    background-color: rgba(255, 255, 255, 0.212);
+    color: white;
+    display: grid;
+    padding: 1vw;
+    text-align: justify;
+    border-radius: 10px;
+    gap: 1vw;
+    min-height: 100%;
+    justify-items: center;
+
+}
+
+.image-card{
+    width: 50%;
+}
+
+.image-card > img{
+    border-radius: 50%;
+}
+.image-ca{
+    background: url("../images/muñeco.jpg");
+    height: 100vh;
+    width: 20vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: auto;
+    gap: 2vw;
+}
+
+.text{
+    grid-area: 1/2/2/9;
+}
+
+.list{
+    padding: 1vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3vw;
+    text-align: justify;
+}
+
+.games{
+    padding: 2vw;
+    background-color: black;
+    color: white;
+}
+
+.catalogo{
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2vw;
+
+}
+
+.card-catalogo{
+    display: grid;
+    gap: 1vw;
+    background-color: rgb(43, 42, 42);
+    padding: 1vw;
+    border-radius: 10px;
+    text-align: justify;
+
+}
+
+.img-catalogo>img{
+    width: 100%;
+}
+
+.description, .accesorios, .caracteristicas, .games{
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
+
+}
+
+.card:hover{
+    transform: scale(1.1);
+    transition: all .4s ease;
+}
+
+.card-catalogo:hover{
+    transform: scale(1.1);
+    transition: all .4s ease;
+}
+
+
+
+
+
+
+
+@keyframes show{
+    from {
+        opacity: 0;
+        scale:25%
+    }
+    to {
+        opacity: 1;
+        scale: 100%;
+    }
+}

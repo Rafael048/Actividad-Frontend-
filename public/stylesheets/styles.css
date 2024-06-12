@@ -67,6 +67,47 @@ ul{
     border: 2px solid white;
     transition: all .6s ease;
 }
+
+footer{
+    background-color: black;
+    color: white;
+    display: grid;
+    justify-items: center;
+    padding: 2vw;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 85%;
+}
+
+.colaboradores{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2vw;
+}
+.social{
+    display: grid;
+    gap: 4vh;
+}
+.nombres, .git{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto ;
+    gap: 1.5vh;
+    text-align: justify;
+}
+.icon{
+    display: flex;
+    gap: 2vw;
+}
+.nombres > a, .git > a{
+    text-decoration: none;
+    color: white;
+}
+
+
 section{
     display: grid;
     justify-items: center;
