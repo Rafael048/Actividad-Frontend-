@@ -92,12 +92,11 @@ section{
 }
 
 .Playstation{
-    background:linear-gradient(to bottom right, #0099ff, #0066cc);
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: 1fr;
     min-height: 80vh;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 1vw;
     align-items: center;
 }
@@ -138,7 +137,6 @@ img,.Playstation-overview,.Xbox-overview, .Nintendo-overview{
 }
 
 .Xbox{
-    background: linear-gradient(to bottom right, rgb(255, 255, 255) 50%, #19A119 50%);;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: 1fr;
@@ -165,11 +163,10 @@ img,.Playstation-overview,.Xbox-overview, .Nintendo-overview{
 }
 
 .Nintendo{
-    background: linear-gradient(rgb(255, 0, 0), rgb(255, 255, 255));
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     min-height: 80vh;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     padding: 1vw;
     align-items: center;
 

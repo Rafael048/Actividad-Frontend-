@@ -17,7 +17,8 @@ router.post("/register",function(req,res,next){
     res.redirect("/")
   })
   .catch((e)=>{
-    res.send(e)
+    console.error(e)
+    res.redirect("/500")
   })
 })
 router.get("/login", function(req,res,next){
@@ -31,7 +32,7 @@ router.post("/login",function(req,res,next){
     res.redirect("/")
   })
   .catch((e)=>{
-    res.send(e)
+    res.redirect("/500")
   })
 })
 
@@ -42,7 +43,13 @@ router.get("/logout",function(req,res,next){
     res.send("Cookie Borrada")
   })
   .catch((e)=>{
-    res.send(e)
+    res.redirect("/500")
   })
+})
+router.get("/401",function(req,res,next){
+  res.render("401")
+})
+router.get("/500",function(req,res,next){
+  res.render("500")
 })
 module.exports = router;
