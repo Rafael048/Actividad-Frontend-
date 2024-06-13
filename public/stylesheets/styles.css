@@ -13,6 +13,7 @@
 body{
     display: grid;
     gap: 3vw;
+    font-size: 1.2vw;
 }
 a{
     text-decoration: none;
@@ -127,7 +128,8 @@ section{
 }
 
 .title{
-    font-size: 3.5vw;
+    font-size: 4vw;
+
 }   
 
 .paragraph{

@@ -18,6 +18,8 @@
 
 body{
     display: grid;
+    font-size: 1.2vw;
+    text-align: justify;
 }
 a{
     text-decoration: none;
@@ -122,6 +124,12 @@ footer{
     text-decoration: underline;
 }
 
+.playstation5{
+    background-color: white;
+    color: black;
+    border-radius: 2vw;
+}
+
 
 section{
     display: grid;
@@ -129,9 +137,10 @@ section{
 }
 
 .title, .title-ps5, .title-accessories, .title-characteristics, .title-games{
-    font-size: 5vw;
+    font-size: 4vw;
     justify-content: start;
     text-transform: uppercase;
+    font-style: italic;
 }
 
 .title-ps5{
