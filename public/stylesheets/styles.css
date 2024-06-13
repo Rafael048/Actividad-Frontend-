@@ -155,7 +155,7 @@ section{
 }
 
 .Playstation-image:hover{
-    filter: drop-shadow(2px 5px 20px rgb(77, 77, 77));
+    filter: drop-shadow(2px 5px 20px rgb(2, 120, 175));
     transition: all .4s ease;
 }
 
@@ -226,7 +226,7 @@ img,.Playstation-overview,.Xbox-overview, .Nintendo-overview{
 }
 
 .Nintendo-image:hover{
-    filter: drop-shadow(1px 10px 80px #030303);
+    filter: drop-shadow(1px 10px 80px #bd0202);
     transition: all .4s ease;
 
 }

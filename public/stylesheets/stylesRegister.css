@@ -110,6 +110,12 @@ a{
     justify-content: center;
     align-items: center;
 }
+footer{
+    margin-top: 1vh;
+}
+.input-control{
+    font-size: 2vw;
 
+}
 }
 
