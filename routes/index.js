@@ -63,4 +63,13 @@ AutenticationControllers.verify(req.cookies.jwt)
   res.redirect("/401")
 })
 })
+router.get("/xbox",function(req,res,next){
+  AutenticationControllers.verify(req.cookies.jwt)
+  .then(()=>{
+    res.render("xbox")
+  })
+  .catch(()=>{
+    res.redirect("/401")
+  })
+  })
 module.exports = router;
