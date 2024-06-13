@@ -1,0 +1,65 @@
+@font-face {
+    font-family: inter;
+    src: url(fuentess/Inter-VariableFont_slnt\,wght.ttf);
+}
+body{
+    display: flex;
+    height: 97vh;
+    justify-content: center;
+    align-items: center;
+    background:url(../images/Login.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.form-main{
+    background-color: white;
+    height: 40vh;
+    width: 20vw;
+    border-radius: 15px;
+}
+.img-user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.user{
+    font-size: 10vh;
+    position: fixed;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+}
+.input-control{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    width: 100%;
+    font-size: 1vw;
+    height: 4vh;
+    margin-bottom: 2vh;
+}
+.button{
+    background-color: black;
+    padding: 1vw 1vw;
+    color:white;
+    text-align: center;
+    border-radius: 2vw;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    font-size: 1vw;
+    margin-top: 5vh;
+    font-weight: bold;
+}
+.button:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    transition: all .6s ease;
+    cursor: pointer;
+}

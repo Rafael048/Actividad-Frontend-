@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar Sesion</title>
-    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="./stylesheets/stylesLogin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
-<body class="body"> 
+<body> 
     <section class="form-main">
         <div class="form-content">
-            <div class="img-Usuario">
-                <img src="imgp/Ellipse 4.png" alt="usuario">
+            <div class="img-user">
+                <i class="bi bi-person-circle user"></i>
             </div>
-            <div class="formulario">
+            <div class="form">
                 <form action="" method="post">
                     <div class="input-S">
                         <input type="text" placeholder="Usuario" name="userName" class="input-control" required>
@@ -22,7 +26,7 @@
                     <input type="password" placeholder="Contraseña" name="password" class="input-control" required>
                     </div>
     
-                    <input type="submit" value="Iniciar Sesion">
+                    <input type="submit" value="Iniciar Sesion" class="button">
                 </form>
                 <p>¿No estás registrado?<a href="/register">Registrate aqui</a></p>
             </div>

@@ -5,7 +5,9 @@ const jwt = require('jsonwebtoken')
 
 
 router.get("/",function(req,res,next){
-  res.render("index")
+  res.render("index", {
+    user : req.cookies.jwt
+  })
 })
 router.get("/register", function(req,res, next){
   res.render("registro")

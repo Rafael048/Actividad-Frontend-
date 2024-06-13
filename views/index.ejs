@@ -19,8 +19,11 @@
                 <li><a href="/playStation" class="categories">Playstation 5</a></li>
                 <li><a href="" class="categories">Xbox Series</a></li>
                 <li><a href="" class="categories">Nintendo Swicth</a></li>
-            <a href="/login" class="button-login">Iniciar Sesion</a>
-            <a href="/logout" class="button-login">Cerrar Sesion</a>
+                <%if (user) { %>
+                    <a href="/logout" class="button-login">Cerrar Sesion</a>
+            <%    }else{   %>
+                <a href="/login" class="button-login">Iniciar Sesion</a>
+                <%  } %>
 
             </ul>
         </nav>
