@@ -128,11 +128,39 @@ section{
     justify-items: center;
 }
 
-.title{
+.title, .title-ps5, .title-accessories, .title-characteristics, .title-games{
     font-size: 5vw;
     justify-content: start;
     text-transform: uppercase;
 }
+
+.title-ps5{
+   background:url("../images/title1.png");
+}
+
+.title-accessories{
+    background: url("../images/title2.png");
+}
+
+.title-characteristics{
+    background: url("../images/title3.png");
+    background-position-x: left;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size:80%;
+}
+
+.title-games{
+    background: url("../images/title4.png");
+}
+
+.title-ps5, .title-accessories, .title-games{
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+ }
 
 .description{
     display: grid;
@@ -142,7 +170,7 @@ section{
     height: 100vh;
 }
 
-.accesorios{
+.accessories{
     display: grid;
     justify-items: center;
     align-items: center;
@@ -214,13 +242,13 @@ section{
 
 .container{
     display: grid;
-    grid-template-columns: repeat(9, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     grid-template-rows: auto;
     gap: 2vw;
 }
 
 .text{
-    grid-area: 1/2/2/9;
+    grid-area: 1/2/2/7;
 }
 
 .list{
@@ -259,7 +287,7 @@ section{
     width: 100%;
 }
 
-.description, .accesorios, .caracteristicas, .games{
+.description, .accessories, .characteristics, .games{
     view-timeline-name: --image;
     view-timeline-axis: block;
 
