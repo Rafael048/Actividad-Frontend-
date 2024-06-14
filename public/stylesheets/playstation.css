@@ -18,29 +18,30 @@
 
 body{
     display: grid;
+    font-size: 1.2vw;
+    text-align: justify;
 }
 a{
     text-decoration: none;
     color: white;
 }
 header{
-    display: grid;
-    padding: 10px;
+    display: flex;
+    flex-direction: row;
     background-color: black;
     color: white;
     height: 15vh;
-    justify-content: center;
+    padding: 2vw;
+    align-items: center;
 }
 
-nav{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 1vw;
+.title-logo{
+    width: 50%;
 }
+
 
 .categories{
-    padding: 1vw 1vw;
+    padding: 0.5vw;
     text-decoration: none;
     color: white;
 }
@@ -52,17 +53,20 @@ nav{
     color: black;
 }
 
+nav{
+    width: 50%;
+}
+
 nav > ul{
     display: flex;
     gap: 1vw;
     list-style: none;
-    align-items: center;
-    
+    justify-content: space-between;
 }
 
 .button-login{
     background-color: white;
-    padding: 1vw 1vw;
+    padding: 0.5vw;
     color:black;
     text-align: center;
     border-radius: 2vw;
@@ -79,36 +83,40 @@ nav > ul{
 footer{
     background-color: black;
     color: white;
-    display: grid;
-    justify-items: center;
+    display: flex;
+    align-items: center;
     padding: 2vw;
 }
 
-.footer{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 85%;
-}
 
-.colaboradores{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+
+.collaborators{
+    display: flex;
+    flex-direction: row;
     gap: 2vw;
+    width: 50%;
 }
 .social{
-    display: grid;
-    gap: 4vh;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    gap: 3vw;
 }
-.nombres, .git{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto ;
+.icon-social{
+    display: flex;
+    gap: 1.5vw;
+}
+
+.git{
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+}
+.nombres, .users, .icon{
+    display: flex;
+    flex-direction: column;
     gap: 1.5vh;
     text-align: justify;
-}
-.icon{
-    display: flex;
-    gap: 2vw;
 }
 .nombres > a, .git > a{
     text-decoration: none;
@@ -122,6 +130,12 @@ footer{
     text-decoration: underline;
 }
 
+.playstation5{
+    background-color: white;
+    color: black;
+    border-radius: 2vw;
+}
+
 
 section{
     display: grid;
@@ -129,9 +143,10 @@ section{
 }
 
 .title, .title-ps5, .title-accessories, .title-characteristics, .title-games{
-    font-size: 5vw;
+    font-size: 4vw;
     justify-content: start;
     text-transform: uppercase;
+    font-style: italic;
 }
 
 .title-ps5{
@@ -162,22 +177,23 @@ section{
     padding: 10px;
  }
 
-.description{
+ .animation-description{
     display: grid;
     justify-items: center;
     align-items: center;
     gap: 2vw;
-    height: 100vh;
+
 }
 
-.accessories{
+
+.animation-accesories{
     display: grid;
     justify-items: center;
     align-items: center;
-    padding-top: 5vh;
-    min-height: 100vh;
+    padding: 5vh;
     background-color: black;
     color: white;
+    
 }
 
 .ps5{
@@ -232,7 +248,7 @@ section{
 }
 .image-ca{
     background: url("../images/muñeco.jpg");
-    height: 100vh;
+
     width: 20vw;
     background-repeat: no-repeat;
     background-size: cover;
@@ -287,7 +303,11 @@ section{
     width: 100%;
 }
 
-.description, .accessories, .characteristics, .games{
+.description, 
+.animation-accesories, 
+.animation-description,
+.characteristics, 
+.games{
     view-timeline-name: --image;
     view-timeline-axis: block;
 

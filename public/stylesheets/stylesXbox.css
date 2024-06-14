@@ -1,0 +1,387 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inter ;
+}
+
+@font-face {
+    font-family: inter;
+    src: url(fuentess/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+body{
+    background: linear-gradient(#000100 15%, #226204 ,#256804,#000100, #226204 ,#256804);
+    background-repeat: repeat;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    height: 15vh;
+    padding: 2vw;
+    align-items: center;
+}
+
+.title-logo{
+    width: 50%;
+}
+
+
+.categories{
+    padding: 0.5vw;
+    text-decoration: none;
+    color: white;
+}
+
+.categories:hover{
+    border-radius: 2vw;
+    transition: all .6s ease;
+    background-color: white;
+    color: black;
+}
+
+nav{
+    width: 50%;
+}
+
+nav > ul{
+    display: flex;
+    gap: 1vw;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.button-login{
+    background-color: white;
+    padding: 0.5vw;
+    color:black;
+    text-align: center;
+    border-radius: 2vw;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.button-login:hover{
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    transition: all .6s ease;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 2vw;
+}
+
+
+
+.collaborators{
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    width: 50%;
+}
+.social{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    gap: 3vw;
+}
+.icon-social{
+    display: flex;
+    gap: 1.5vw;
+}
+
+.git{
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+}
+.nombres, .users, .icon{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+    text-align: justify;
+}
+.nombres > a, .git > a{
+    text-decoration: none;
+    color: white;
+}
+
+.nombres>a:hover{
+    text-decoration: underline;
+}
+.git>a:hover{
+    text-decoration: underline;
+}
+
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1vw;
+    font-size: 20px;
+}
+
+.description{
+    display: flex;
+    gap: 2vw;
+    flex-direction: column;
+    color: white;
+    width: 80%;
+}
+.description-container{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 2vw;
+}
+
+.title-description{
+    font-size: 4vw;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.description-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.img-xbox{
+    width: 30%;
+}
+
+.description-text{
+    display: flex;
+    width: 70%;
+    gap: 2vw;
+    flex-direction: column;
+    text-align: justify;
+
+}
+
+.Sub-title{
+    display: flex;
+    flex-direction: column;
+}
+
+.sub{
+    width: 60%;
+    font-size: 16px;
+}
+
+
+.control{
+    color: white;
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 2vw;
+}
+
+.control-description{
+    display: flex;
+    gap: 1vw;
+}
+
+.text-control{
+    width: 50%;
+    text-align: justify;
+}
+
+.img-control{
+    width: 50%;
+}
+
+.title-control{
+    font-size: 3vw;
+}
+
+.news{
+    background: url("../images/halo.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center ;
+    background-position-y: top;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 3vw;
+}
+
+.news-description{
+    color: white;
+    width: 80%;
+}
+
+.news-description>h1{
+    font-size: 3.5vw;
+    font-style: italic;
+}
+
+.news-text{
+    font-size: 2.5vw;
+    font-style: italic;
+}
+
+.games{
+    background: linear-gradient(#000100, #226204);
+    display: flex;
+    justify-content: center;
+    padding: 2vw;
+}
+
+.games-container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+}
+
+.title-games{
+    font-size: 4vw;
+    color: white;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    background-color: #256804;
+    border-radius: 10px;
+    color: white;
+    padding: 2vw;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.card > h1{
+    font-size: 2vw;
+}
+
+.img-card{
+    width: 100%;
+}
+
+.img-card>img{
+    border-radius: 10px;
+
+}
+
+.games-xbox{
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+}
+
+@media (max-width:1010px) {
+    .sub{
+        width: 100%;
+    }
+    .description-container{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .description-text{
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .control-description{
+        align-items: center;
+        font-size: 16px;
+        flex-direction: column;
+    }
+    .text-control{
+        width: 100%;
+    }
+
+    .card{
+        font-size: 1.5vw;
+    }
+    nav{
+        display: none;
+    }
+}
+
+@media (max-width:768px){
+    .control-description, 
+    .description-text{
+        font-size: 12px;
+    }
+
+    .sub{
+        font-size: 11px;
+    }
+
+    .news{
+        height: 25vw;
+    }
+
+    .games-xbox{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 1vw;
+    }
+    .card{
+        width: 50%;
+    }
+    .description{
+        gap: 0;
+        padding: 0;
+    }
+    footer{
+        font-size: 10px;
+    }
+}
+
+@media (max-width:410px){
+    .title-logo{
+        font-size: 2vw;
+    }
+    .title-logo-footer{
+        font-size: 3vw;
+    }
+
+    .collaborators,.git{
+        font-size: 2vw;
+    }
+
+    .control-description, 
+    .description-text{
+        font-size: 10px;
+    }
+    .sub{
+        font-size: 8px;
+    }
+
+    header{
+        height: 10vh;
+    }
+}
