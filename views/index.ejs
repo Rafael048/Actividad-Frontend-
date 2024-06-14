@@ -12,105 +12,115 @@
 </head>
 <body>
     <header>
-
+        <div class="title-logo">
+            <a href="/"><h1 >Zona gaming</h1></a>
+        </div>
         <nav>
-            <a href="/"><h1>Zona Gaming</h1></a>
             <ul>
-                <li><a href="/playStation" class="categories">Playstation 5</a></li>
-                <li><a href="/xbox" class="categories">Xbox Series</a></li>
-                <li><a href="/nintendo" class="categories">Nintendo Swicth</a></li>
+                <li><a href="/playstation" class="categories playstation5">Playstation 5</a></li>
+                <li><a href="/Xbox" class="categories xbox" >Xbox Series</a></li>
+                <li><a href="" class="categories nintendo">Nintendo Swicth</a></li>
                 <%if (user) { %>
-                    <a href="/logout" class="button-login">Cerrar Sesion</a>
-            <%    }else{   %>
-                <a href="/login" class="button-login">Iniciar Sesion</a>
-                <%  } %>
-
+                    <li>
+                        <a href="/logout" class="button-login">Cerrar Sesion</a>
+                    </li>
+                    
+                    <%    }else{   %>
+                        <li>
+                            <a href="/login" class="button-login">Iniciar Sesion</a>
+                        </li>
+                        <%  } %>
+                        
             </ul>
         </nav>
     </header>
+    <section class="main">
 
-    <section>
-        <div class="welcome">
-            <article class="paragraph">
-                <h1 class="title">Bienvenido</h1>
-                <br>
+        <section class="welcome">
+                <article class="paragraph">
+                    <h1 class="title">Bienvenido</h1>
+                    <br>
+                    <p>
+                        ¡Bienvenido a nuestro a zona Gaming, el destino definitivo para los entusiastas de los videojuegos y los amantes de la tecnología! Aquí en nuestro espacio virtual, te sumergirás en un mundo emocionante lleno de reseñas, noticias, análisis en profundidad y todo lo relacionado con las últimas novedades en el mundo de las consolas y los videojuegos.
+                    </p>
+                    <br>
+                    <p>
+                        ¿Buscas consejos sobre qué consola comprar? ¿Quieres estar al tanto de los próximos lanzamientos de juegos? ¿O quizás simplemente deseas sumergirte en un análisis profundo de tus títulos favoritos? Sea cual sea tu pasión, estamos aquí para satisfacerla.
+                    </p>
+                </article>
+                <article class="img">
+                    <img src="./images/logos.png" alt="" width="100%">
+                </article>
+        </section>
+    
+        <section class="Playstation">
+            <article class="Playstation-overview"> 
+                <h1 class="title">Playstation 5</h1> <br>
+                <p>La PlayStation 5 es la puerta de entrada a un mundo de entretenimiento interactivo sin igual. Con su potencia, rendimiento y exclusivos de PlayStation, te ofrece una experiencia de juego incomparable. Sumérgete en mundos virtuales vibrantes, disfruta de gráficos impresionantes y siente la emoción de tus juegos favoritos como nunca antes. Con la PS5, la diversión y la emoción están garantizadas. ¿Estás listo para vivir la experiencia?</p>
+            </article>
+            
+                <img src="./images/Playstation 5.png" alt="" class="Playstation-image">
+        
+        </section>
+    
+        <section class="Xbox">
+            <article class="Xbox-overview">
+                <h1 class="title">Xbox Series X</h1>
                 <p>
-                    ¡Bienvenido a nuestro a zona Gaming, el destino definitivo para los entusiastas de los videojuegos y los amantes de la tecnología! Aquí en nuestro espacio virtual, te sumergirás en un mundo emocionante lleno de reseñas, noticias, análisis en profundidad y todo lo relacionado con las últimas novedades en el mundo de las consolas y los videojuegos.
-                </p>
-                <br>
-                <p>
-                    ¿Buscas consejos sobre qué consola comprar? ¿Quieres estar al tanto de los próximos lanzamientos de juegos? ¿O quizás simplemente deseas sumergirte en un análisis profundo de tus títulos favoritos? Sea cual sea tu pasión, estamos aquí para satisfacerla.
+                    El auténtico corazón de esta consola de videojuegos es el chip que aglutina tanto la CPU como la lógica gráfica, dos componentes que trabajan coordinadamente en el interior de un mismo circuito integrado. Aunque este SoC fabricado con fotolitografía ultravioleta extrema (EUV) de 7 nm implementa las microarquitecturas Zen 2 para la CPU y RDNA 2 para el procesador gráfico, no es idéntico a las soluciones de AMD que se apoyan en ellas. Microsoft ha confirmado que el cerebro de sus nuevas consolas incorpora a petición de sus ingenieros algunas modificaciones que en cierta medida lo desmarcan de los procesadores Ryzen 3000 y las nuevas Radeon RX 6000.
                 </p>
             </article>
-            <article class="img">
-                <img src="./images/logos.png" alt="" width="100%">
+            
+                <img src="./images/Xbox series.png" alt="" class="Xbox-image">
+            
+        </section>
+    
+        <section class="Nintendo">
+            <article class="Nintendo-overview">
+                <h1 class="title">Nintendo Swicth</h1>
+                <p>
+                    La Switch es una consola portátil con forma de tableta que puede ser insertada en una base conectada al televisor para usarla como consola de sobremesa, lo que la hace híbrida. A pesar de esta característica, Nintendo la promociona como una consola de sobremesa en vez de una consola portátil diciendo que es la substituta de Wii U y no de Nintendo 3DS. La Switch incluye dos controles inalámbricos desechables, cuyo nombre es Joy-Con, que pueden ser utilizados individualmente o en un mando o pantalla.            
+                </p>
             </article>
+            
+                <img src="./images/Nintendo-Swicth.png" alt="" class="Nintendo-image">
+        
+        </section>
+        
+    </section>
+
+    <footer>     
+        <div class="social">
+            <h3 class="title-logo-footer">Zona gaming</h3>
+            <div class="icon-social">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-linkedin"></i>
+                <i class="bi bi-whatsapp"></i>
+                <i class="bi bi-instagram"></i>
+            </div>
         </div>
-    </section>
-
-    <section class="Playstation">
-        <article class="Playstation-overview"> 
-            <h1 class="title">Playstation 5</h1> <br>
-            <p>La PlayStation 5 es la puerta de entrada a un mundo de entretenimiento interactivo sin igual. Con su potencia, rendimiento y exclusivos de PlayStation, te ofrece una experiencia de juego incomparable. Sumérgete en mundos virtuales vibrantes, disfruta de gráficos impresionantes y siente la emoción de tus juegos favoritos como nunca antes. Con la PS5, la diversión y la emoción están garantizadas. ¿Estás listo para vivir la experiencia?</p>
-        </article>
-        
-            <img src="./images/Playstation 5.png" alt="" class="Playstation-image">
-    
-    </section>
-
-    <section class="Xbox">
-        <article class="Xbox-overview">
-            <h1 class="title">Xbox Series X</h1>
-            <p>
-                El auténtico corazón de esta consola de videojuegos es el chip que aglutina tanto la CPU como la lógica gráfica, dos componentes que trabajan coordinadamente en el interior de un mismo circuito integrado. Aunque este SoC fabricado con fotolitografía ultravioleta extrema (EUV) de 7 nm implementa las microarquitecturas Zen 2 para la CPU y RDNA 2 para el procesador gráfico, no es idéntico a las soluciones de AMD que se apoyan en ellas. Microsoft ha confirmado que el cerebro de sus nuevas consolas incorpora a petición de sus ingenieros algunas modificaciones que en cierta medida lo desmarcan de los procesadores Ryzen 3000 y las nuevas Radeon RX 6000.
-            </p>
-        </article>
-        
-            <img src="./images/Xbox series.png" alt="" class="Xbox-image">
-        
-    </section>
-
-    <section class="Nintendo">
-        <article class="Nintendo-overview">
-            <h1 class="title">Nintendo Swicth</h1>
-            <p>
-                La Switch es una consola portátil con forma de tableta que puede ser insertada en una base conectada al televisor para usarla como consola de sobremesa, lo que la hace híbrida. A pesar de esta característica, Nintendo la promociona como una consola de sobremesa en vez de una consola portátil diciendo que es la substituta de Wii U y no de Nintendo 3DS. La Switch incluye dos controles inalámbricos desechables, cuyo nombre es Joy-Con, que pueden ser utilizados individualmente o en un mando o pantalla.            
-            </p>
-        </article>
-        
-            <img src="./images/Nintendo-Swicth.png" alt="" class="Nintendo-image">
-    
-    </section>
-
-    <footer>
-        <article class="footer">
-            <div class="social">
-                <h3>Zona gaming</h3>
-                <div class="icon">
-                    <i class="bi bi-facebook"></i>
-                    <i class="bi bi-linkedin"></i>
-                    <i class="bi bi-whatsapp"></i>
-                    <i class="bi bi-instagram"></i>
-                </div>
+        <div class="collaborators">
+            <div class="nombres">
+                <b>Colaboradores</b>
+                <a href="">Ricardo Briceño</a>
+                <a href="">Rachel Sanchez</a>
+                <a href="">Rafael Perez</a>
             </div>
-            <div class="colaboradores">
-                <div class="nombres">
-                    <b>Colaboradores</b>
-                    <a href="">Ricardo Briceño</a>
-                    <a href="">Rachel Sanchez</a>
-                    <a href="">Rafael Perez</a>
-                </div>
-                <div class="git">
+            <div class="git">
+                <div class="users">
                     <b>GitHub</b>
-                    <a href="">RicardoBRJ <i class="bi bi-github"></i> </a>
-                    <a href="">betzabeth03 <i class="bi bi-github"></i></a>
-                    <a href="">Rafael048 <i class="bi bi-github"></i></a>
+                    <a href="">RicardoBRJ </a>
+                    <a href="">betzabeth03</a>
+                    <a href="">Rafael048</a>
+                </div>
+                <div class="icon">
+                    <br>
+                    <i class="bi bi-github"></i>
+                    <i class="bi bi-github"></i>
+                    <i class="bi bi-github"></i>
                 </div>
             </div>
-
-        </article>
-        
-
-    </footer>
+        </div>
+</footer>
 </body>
 </html>
