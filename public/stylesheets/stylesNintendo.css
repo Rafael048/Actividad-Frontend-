@@ -1,0 +1,238 @@
+.categories.nintendo{
+    color: black;
+    background-color: white;
+    border-radius: 2vw;
+}
+
+.title{
+    font-size: 3.2vw;
+    font-style: italic;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.background{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("../images/Mario-3d.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: right ;
+    background-position-y: top;
+    height: 90vh;
+}
+
+.start{
+    display: flex;
+    width: 80%;
+    text-align: justify;
+
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    width: 70%;
+}
+
+.consola{
+    background:linear-gradient(red, black) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 6vh;
+    color: white;
+    height: 90vh;
+    gap: 10vh;
+
+}
+
+.consola-description{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+
+.description{
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+    align-items: center;
+}
+
+.img-consola{
+    width: 50%;
+}
+.text-description{
+    width: 50%;
+    text-align: justify;
+}
+
+.games{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    background-color: black;
+    color: white;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    padding: 1vw;
+    border-radius: 20px;
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.247);
+    text-align: justify;
+}
+
+.img-games{
+    width: 40%;
+}
+.cataloge-games{
+    display: flex;
+    gap: 2vw;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.title-catalogue{
+    font-size: 26px;
+}
+
+
+
+.consola-description,
+.card{
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
+
+}
+
+.background.invisible{
+    opacity: 5%;
+    background-color: black;
+}
+
+@keyframes show{
+    from {
+        opacity: 0;
+        scale:25%
+    }
+    to {
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+@media (max-width:1246px){
+    .start{
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .description, 
+    .card{
+        font-size: 16px;
+
+    }
+
+    .text{
+        width: 50%;
+        padding: 1vw;
+    }
+    .title-catalogue{
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width:850px) {
+    .background{
+        background-position-x: center;
+        background-position-y: top;
+        background-size: cover;
+        opacity: 80%;
+    }
+    .start{
+        width: 80%;
+        background-color: rgba(255, 255, 255, 0.836);
+    }
+    .text{
+        width: 100%;
+    }
+
+}
+
+@media (max-width:768px){
+    .description{
+        flex-direction: column-reverse;
+    }
+    .img-consola,.text-description{
+        width: 100%;
+    }
+    .title{
+        font-size: 24px;
+    }
+    .card{
+        width: 80%;
+        padding: 2vw;
+    }
+    .cataloge-games{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+}
+
+@media (max-width:620px){
+    .start,
+    .description,
+    .card{
+        font-size: 14px;
+    }
+}
+
+@media (max-width:425px){
+    .card{
+        width: 100%;
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .start,
+    .description{
+        font-size: 12px;
+    }
+
+    .title-catalogue{
+        font-size: 18px;
+    }
+}
+

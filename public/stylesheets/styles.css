@@ -1,129 +1,8 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: inter ;
-}
-
-@font-face {
-    font-family: inter;
-    src: url(fuentess/Inter-VariableFont_slnt\,wght.ttf);
-}
-
 body{
     display: flex;
     flex-direction: column;
     gap: 3vw;
 }
-a{
-    text-decoration: none;
-    color: white;
-}
-header{
-    display: flex;
-    flex-direction: row;
-    background-color: black;
-    color: white;
-    height: 15vh;
-    padding: 2vw;
-    align-items: center;
-}
-
-.title-logo{
-    width: 50%;
-}
-
-
-.categories{
-    padding: 0.5vw;
-    text-decoration: none;
-    color: white;
-}
-
-.categories:hover{
-    border-radius: 2vw;
-    transition: all .6s ease;
-    background-color: white;
-    color: black;
-}
-
-.nav{
-    width: 50%;
-}
-
-.nav > ul{
-    display: flex;
-    gap: 1vw;
-    list-style: none;
-    justify-content: space-between;
-}
-
-.button-login{
-    background-color: white;
-    padding: 0.5vw;
-    color:black;
-    text-align: center;
-    border-radius: 2vw;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.button-login:hover{
-    background-color: black;
-    color: white;
-    border: 2px solid white;
-    transition: all .6s ease;
-}
-
-footer{
-    background-color: black;
-    color: white;
-    display: flex;
-    align-items: center;
-    padding: 2vw;
-}
-
-
-
-.collaborators{
-    display: flex;
-    flex-direction: row;
-    gap: 2vw;
-    width: 50%;
-}
-.social{
-    display: flex;
-    width: 50%;
-    flex-direction: column;
-    gap: 3vw;
-}
-.icon-social{
-    display: flex;
-    gap: 1.5vw;
-}
-
-.git{
-    display: flex;
-    flex-direction: row;
-    gap: 1vw;
-}
-.nombres, .users, .icon{
-    display: flex;
-    flex-direction: column;
-    gap: 1.5vh;
-    text-align: justify;
-}
-.nombres > a, .git > a{
-    text-decoration: none;
-    color: white;
-}
-
-.nombres>a:hover{
-    text-decoration: underline;
-}
-.git>a:hover{
-    text-decoration: underline;
-}
-
 
 .main{
     font-size: 20px;
@@ -236,11 +115,6 @@ img,.Playstation-overview,.Xbox-overview, .Nintendo-overview{
 }
 
 
-.open-menu, .close-menu{
-    display: none;
-}
-
-
 @media (max-width:1440px) {
     .welcome,.Playstation,.Xbox,.Nintendo{
         font-size: 16px;
@@ -250,58 +124,8 @@ img,.Playstation-overview,.Xbox-overview, .Nintendo-overview{
     }
 }
 
-@media (max-width:1024px) {
-    .button-open{
-        display: flex;
-        width: 100%;
-        justify-content: flex-end;
-    }
-    nav >ul{
-        display: flex;
-        flex-direction: column;
-        gap: 3vw;
-        align-items: center;
-        list-style-type: none;
-        padding: 3vw;
-    }
-    .open-menu, .close-menu{
-        display: block;
-        border: 0;
-        font-size: 5vw;
-        background-color: black;
-        color: white;
-    }
-    nav{
-        opacity: 0;
-        visibility: hidden;
-        position: absolute;
-        top: 0;
-        right: 0;
-        background-color: black;
-        box-shadow: 0 0 0 100vmax rgba(110, 110, 110, 0.753);
-        border-radius: 20px;
-    }
-
-    .nav.visible{
-        opacity: 1 ;
-        width: 25%;
-        visibility: visible;
-        animation-name: menu;
-        animation-duration: .6s;
-    }
-
-    .img-welcome.invisible{
-        opacity: 10%;
-    }
-
-}
 
 @media (max-width:768px){
-
-    nav > ul{
-        font-size: 14px;
-        gap: 5vw;
-    }
     .welcome,
     .Playstation,
     .Xbox,
@@ -317,21 +141,9 @@ img,.Playstation-overview,.Xbox-overview, .Nintendo-overview{
         width: 100%;
         font-size: 14px;
     }
-    footer{
-        font-size: 10px;
-    }
 }
 
 @media (max-width:425px){
-
-    nav > ul{
-        font-size: 10px;
-    }
-
-    .nav.visible{
-        width: 40%;
-       }
-
     .title{
         font-size: 20px;
     }
@@ -344,21 +156,6 @@ img,.Playstation-overview,.Xbox-overview, .Nintendo-overview{
 
     .img-welcome,.img-nintendo{
         width: 70%;
-    }
-
-    .title-logo{
-        font-size: 2vw;
-    }
-    .title-logo-footer{
-        font-size: 3vw;
-    }
-
-    .collaborators,.git{
-        font-size: 2vw;
-    }
-
-    header{
-        height: 10vh;
     }
 }
 
