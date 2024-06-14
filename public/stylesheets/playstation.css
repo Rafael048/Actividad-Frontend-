@@ -208,11 +208,16 @@ footer{
     width: 80%;
 }
 
+.img-description{
+    width: 50%;
+}
+
 .img-description:hover{
     transform: scale(1.1);
     transition: all .6s ease;
     filter: drop-shadow( 2px 2px 100px rgb(69, 69, 233));
 }
+
 
 .ps5{
     display: flex;
@@ -254,6 +259,10 @@ footer{
     padding: 1vw;
 }
 
+.card:hover{
+    transform: scale(1.1);
+    transition: all .6s ease;
+}
 
 
 .image-card > img{
@@ -271,7 +280,7 @@ footer{
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
-    width: 60%;
+    width: 80%;
 }
 
 .list{
@@ -338,5 +347,98 @@ footer{
     to {
         opacity: 1;
         scale: 100%;
+    }
+}
+
+@media (max-width:1300px){
+    .ps5{
+        flex-direction: column;
+        align-items: center;
+    }
+    .text-description{
+        width: 100%;
+    }
+    .card{
+        width: 25%;
+    }
+
+    .catalogue{
+        width: 70%;
+    }
+    .image-ca{
+        width: 90%;
+    }
+    .list{
+        flex-direction: column;
+    }
+}
+
+@media (max-width:1010px){
+    .catalogue{
+        width: 90%;
+    }
+
+    .card{
+        width: 30%;
+    }
+
+    .card, .card-catalogue, .text-description, .characteristics{
+        font-size: 14px;
+    }
+
+    nav{
+        display: none;
+    }
+}
+
+@media (max-width:768px){
+    footer{
+        font-size: 10px;
+    }
+    .cards{
+        flex-direction: column;
+        align-items: center ;
+    }
+    .card{
+        width: 80%;
+        padding: 2vw;
+    }
+    .image-card{
+        width: 50%;
+    }
+
+    .catalogue{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-catalogue{
+        width: 60%;
+        padding: 2vw;
+    }
+}
+
+@media (max-width:410px){
+    .title-logo{
+        font-size: 2vw;
+    }
+    .title-logo-footer{
+        font-size: 3vw;
+    }
+    .collaborators,.git{
+        font-size: 2vw;
+    }
+    .card, .card-catalogue, .text-description, .characteristics{
+        font-size: 12px;
+    }
+    
+    .catalogue{
+        width: 100%;
+    }
+    .card{
+        width: 90%;
+    }
+
+    header{
+        height: 10vh;
     }
 }
