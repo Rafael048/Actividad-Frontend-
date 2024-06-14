@@ -11,7 +11,8 @@
 }
 
 body{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 3vw;
 }
 a{
@@ -126,52 +127,91 @@ footer{
 
 .main{
     font-size: 20px;
-    display: grid;
-    justify-items: center;
+    display: flex;
+    align-items: center; 
+    flex-direction: column;
+    gap: 2vw;
 }
 
 .welcome{
-    display: grid;
     width: 80%;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: row;
     gap: 2vw;
-    align-items:flex-start;
-    gap: 5vw;
-    min-height: 80vh;
 }
 
 .title{
     font-size: 4vw;
-
-}   
+}
 
 .paragraph{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
     text-align: justify;
-    font-size: 1.1vw;
+    width: 50%;
+}
+
+.img-welcome{
+    width: 50%;
 }
 
 .Playstation{
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: 1fr;
-    min-height: 80vh;
-    color: rgb(0, 0, 0);
-    padding: 1vw;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2vw;
+    padding: 3vw;
+    width: 80%;
     align-items: center;
 }
 
 .Playstation-overview{
-    grid-area: 1/5/2/10;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    text-align: justify;
+    width: 60%;
+}
+
+.img-playstation{
+   width: 40%;
+}
+
+.Xbox{
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    padding: 2vw;
+    width: 80%;
+}
+
+.Xbox-overview{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    text-align: justify;
+    width: 60%;
+}
+
+
+.Nintendo{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    gap: 2vw;
+    padding: 3vw;
+    align-items: center;
+}
+.Nintendo-overview{
+    display: flex;
+    flex-direction: column;
+    gap:1vw;
+    width: 50%;
     text-align: justify;
 }
 
-.Playstation-image{
-    grid-area: 1/3/2/4;
-}
-
-.Playstation-image:hover{
-    filter: drop-shadow(2px 5px 20px rgb(2, 120, 175));
-    transition: all .4s ease;
+.img-nintendo{
+    width: 50%;
 }
 
 @keyframes show{
@@ -195,53 +235,77 @@ img,.Playstation-overview,.Xbox-overview, .Nintendo-overview{
     animation-fill-mode: both;
 }
 
-.Xbox{
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: 1fr;
-    min-height: 80vh;
-    color: rgb(0, 0, 0);
-    padding: 1vw;
-    align-items: center;
 
+@media (max-width:1440px) {
+    .welcome,.Playstation,.Xbox,.Nintendo{
+        font-size: 16px;
+    }
+    
+    
+    .img-xbox{
+        width: 50%;
+    }
 }
 
-.Xbox-overview{
-    grid-area: 1/2/2/8;
-    text-align: justify;
+@media (max-width:1024px) {
+
+
+    nav{
+        display: none;
+    }
 }
 
-.Xbox-image{
-    grid-area: 1/8/2/9;
+@media (max-width:768px){
+
+    .welcome,
+    .Playstation,
+    .Xbox,
+    .Nintendo{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .paragraph,
+    .Playstation-overview,
+    .Xbox-overview,
+    .Nintendo-overview{
+        width: 100%;
+        font-size: 14px;
+    }
+    footer{
+        font-size: 10px;
+    }
 }
 
-.Xbox-image:hover{
-    filter: drop-shadow(1px 10px 80px #19A119);
-    transition: all .4s ease;
+@media (max-width:425px){
 
+    .title{
+        font-size: 20px;
+    }
+    .paragraph,
+    .Playstation-overview,
+    .Xbox-overview,
+    .Nintendo-overview{
+        font-size: 12px;
+    }
+
+    .img-welcome,.img-nintendo{
+        width: 70%;
+    }
+
+    .title-logo{
+        font-size: 2vw;
+    }
+    .title-logo-footer{
+        font-size: 3vw;
+    }
+
+    .collaborators,.git{
+        font-size: 2vw;
+    }
+
+    header{
+        height: 10vh;
+    }
 }
 
-.Nintendo{
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    min-height: 80vh;
-    color: rgb(0, 0, 0);
-    padding: 1vw;
-    align-items: center;
-
-}
-
-.Nintendo-overview{
-    grid-area: 1/2/2/12;
-    text-align: justify;
-}
-
-.Nintendo-image{
-    grid-area: 2/2/3/12;
-}
-
-.Nintendo-image:hover{
-    filter: drop-shadow(1px 10px 80px #bd0202);
-    transition: all .4s ease;
-
-}
