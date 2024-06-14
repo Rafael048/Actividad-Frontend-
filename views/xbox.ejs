@@ -16,34 +16,106 @@
 </head>
 <body>
     <header>
-
+        <div class="title-logo">
+            <a href="/"><h1 >Zona gaming</h1></a>
+        </div>
         <nav>
-            <a href="/"><h1 class="title-logo">Zona gaming</h1></a>
             <ul>
-                <li><a href="/playStation" class="categories">Playstation 5</a></li>
-                <li><a href="xbox" class="categories">Xbox Series</a></li>
-                <li><a href="nintendo" class="categories">Nintendo Swicth</a></li>
-                <a href="/logout" class="button-login">Cerrar Sesion</a>
+                <li><a href="/playstation" class="categories playstation5">Playstation 5</a></li>
+                <li><a href="/Xbox" class="categories xbox" >Xbox Series</a></li>
+                <li><a href="" class="categories nintendo">Nintendo Swicth</a></li>
+                <li><a href="/logout" class="button-login">Cerrar Sesion</a></li>
             </ul>
         </nav>
     </header>
 
     <section class="main"> 
-        
+        <section class="description">
+            <div class="Sub-title">
+                <h1 class="title-description">Potencia tus sueños</h1>
+                <p class="sub">
+                    <i>Cada aspecto de esta consola ha sido meticulosamente diseñado para llevar tu experiencia de juego a un nivel nunca antes visto</i>
+                </p>
+            </div>
+            <div class="description-container">
+                <article class="description-container">
+                    <article class="img-xbox">
+                        <img src="./images/xbox.png" alt="xbox" width="100%">
+                    </article>
+                    <div class="description-text">
+                        <p>
+                            El corazón de la Xbox Series X es su poderoso hardware, con un procesador personalizado que combina una CPU Zen 2 y una GPU RDNA 2 de AMD, esta consola ofrece una experiencia de juego fluida y rápida. La resolución 4K a 60 FPS es solo el comienzo. La Xbox One Series X lleva la experiencia visual a otro nivel con ray tracing, profundizando en detalles y realismo como nunca antes, además, el soporte para Dolby Atmos y DTS:X garantiza una inmersión sonora que complementa a la perfección la calidad visual. 
+                        </p>
+                        <p>
+                            Una de las joyas de la Xbox Series X es su compatibilidad con juegos de generaciones anteriores. No solo podrás jugar títulos de Xbox One, sino también de Xbox 360 y hasta del Xbox original, asimismo, la interfaz de usuario ha sido refinada para una navegación más intuitiva y rápida. La Xbox Velocity Architecture es una innovación clave en el Xbox Series X. Esta tecnología optimiza el rendimiento del hardware para mejorar la velocidad de procesamiento de los juegos y la calidad de las texturas.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="control">
+            <h1 class="title-control">Todo sobre los controles de Xbox Design Lab</h1>
+            <article class="control-description">
+                <p class="text-control">¿Quieres un control que sea exclusivamente tuyo? Xbox Design Lab puede diseñar un control inalámbrico Xbox o un control inalámbrico Xbox Elite Serie 2 según tus especificaciones. Puedes elegir entre una amplia gama de colores, agregar acabados metálicos y agarres de goma, cambiar el aspecto de los botones e incluso grabar tu gamertag.</p>
+                <div class="img-control">
+                    <img src="./images/control-xbox.png" alt="control-xbox" width="90%">
+                </div>
+            </article>
+        </section>
+
+        <section class="news">
+            <article class="news-description">
+                <h1>Escucha... Estás rodeado.</h1>
+                <p class="news-text"><b>
+                    <br>
+                    El sonido espacial 3D es la siguiente evolución de la tecnología de audio, que utiliza algoritmos avanzados para crear mundos envolventes realistas que te sitúan en el centro de la experiencia.
+                </b></p>
+            </article>
+        </section>
+
+        <section class="games">
+            <div class="games-container">
+                <h1 class="title-games">Juegos</h1>
+                <article class="games-xbox">
+                    <div class="card">
+                        <h1>Forza horizon 5</h1>
+                        <div class="img-card">
+                            <img src="./images/forza.jpg" alt="forza" width="100%">
+                        </div>
+                        <p>La conducción arcade alcanza la perfección en Forza Horizon 5, la más reciente entrega de la saga de Playground Games (que actualmente trabajan en el reboot de Fable). Si pensabas que Forza Horizon 4 era insuperable, espera a ver lo que ofrece esta quinta parte.</p>
+                    </div>
+                    <div class="card">
+                        <h1>Gears 5</h1>
+                        <div class="img-card">
+                            <img src="./images/gears.jpg" alt="gears" width="100%">
+                        </div>
+                        <p>La saga Gears of War también ha dado sus pinitos en el género de estrategia en tiempo real. Fue con Gears Tactics, un sobresaliente título desarrollado por Splash Damage (Brink) que nos ubicaba 12 años antes del primer Gears of War, en la piel de Gabe Diaz, padre de Kait (Gears 5).</p>
+                    </div>
+                    <div class="card">
+                        <h1>Halo infinite</h1>
+                        <div class="img-card">
+                            <img src="./images/halo-infinite.jpg" alt="halo" width="100%">
+                        </div>
+                        <p>Podríamos decir que Halo Infinite, sexta entrega principal de la serie, fue el primer gran juego exclusivo de Xbox Series X|S. También supuso un impulso para 343 Industries, que lo bordó con Halo 4 pero pegó un bajón con Halo 5 Guardians, recordando a los mejores desarrollos de Bungie.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
     </section>
 
-    <footer>
-        <article class="footer">
+    <footer>     
             <div class="social">
-                <h3>Zona gaming</h3>
-                <div class="icon">
+                <h3 class="title-logo-footer">Zona gaming</h3>
+                <div class="icon-social">
                     <i class="bi bi-facebook"></i>
                     <i class="bi bi-linkedin"></i>
                     <i class="bi bi-whatsapp"></i>
                     <i class="bi bi-instagram"></i>
                 </div>
             </div>
-            <div class="colaboradores">
+            <div class="collaborators">
                 <div class="nombres">
                     <b>Colaboradores</b>
                     <a href="">Ricardo Briceño</a>
@@ -51,16 +123,20 @@
                     <a href="">Rafael Perez</a>
                 </div>
                 <div class="git">
-                    <b>GitHub</b>
-                    <a href="">RicardoBRJ <i class="bi bi-github"></i> </a>
-                    <a href="">betzabeth03 <i class="bi bi-github"></i></a>
-                    <a href="">Rafael048 <i class="bi bi-github"></i></a>
+                    <div class="users">
+                        <b>GitHub</b>
+                        <a href="">RicardoBRJ </a>
+                        <a href="">betzabeth03</a>
+                        <a href="">Rafael048</a>
+                    </div>
+                    <div class="icon">
+                        <br>
+                        <i class="bi bi-github"></i>
+                        <i class="bi bi-github"></i>
+                        <i class="bi bi-github"></i>
+                    </div>
                 </div>
             </div>
-
-        </article>
-        
-
     </footer>
 </body>
 </html>
