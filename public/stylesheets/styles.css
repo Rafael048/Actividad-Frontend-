@@ -47,11 +47,11 @@ header{
     color: black;
 }
 
-nav{
+.nav{
     width: 50%;
 }
 
-nav > ul{
+.nav > ul{
     display: flex;
     gap: 1vw;
     list-style: none;
@@ -236,27 +236,72 @@ img,.Playstation-overview,.Xbox-overview, .Nintendo-overview{
 }
 
 
+.open-menu, .close-menu{
+    display: none;
+}
+
+
 @media (max-width:1440px) {
     .welcome,.Playstation,.Xbox,.Nintendo{
         font-size: 16px;
     }
-    
-    
     .img-xbox{
         width: 50%;
     }
 }
 
 @media (max-width:1024px) {
-
-
-    nav{
-        display: none;
+    .button-open{
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
     }
+    nav >ul{
+        display: flex;
+        flex-direction: column;
+        gap: 3vw;
+        align-items: center;
+        list-style-type: none;
+        padding: 3vw;
+    }
+    .open-menu, .close-menu{
+        display: block;
+        border: 0;
+        font-size: 5vw;
+        background-color: black;
+        color: white;
+    }
+    nav{
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: black;
+        box-shadow: 0 0 0 100vmax rgba(110, 110, 110, 0.753);
+        border-radius: 20px;
+    }
+
+    .nav.visible{
+        opacity: 1 ;
+        width: 25%;
+        visibility: visible;
+        animation-name: menu;
+        animation-duration: .6s;
+    }
+
+    .img-welcome.invisible{
+        opacity: 10%;
+    }
+
 }
 
 @media (max-width:768px){
 
+    nav > ul{
+        font-size: 14px;
+        gap: 5vw;
+    }
     .welcome,
     .Playstation,
     .Xbox,
@@ -278,6 +323,14 @@ img,.Playstation-overview,.Xbox-overview, .Nintendo-overview{
 }
 
 @media (max-width:425px){
+
+    nav > ul{
+        font-size: 10px;
+    }
+
+    .nav.visible{
+        width: 40%;
+       }
 
     .title{
         font-size: 20px;
@@ -309,3 +362,11 @@ img,.Playstation-overview,.Xbox-overview, .Nintendo-overview{
     }
 }
 
+@keyframes menu {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

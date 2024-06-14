@@ -16,14 +16,21 @@
     <title>Document</title>
 </head>
 <body>
+    <script src="./javascript/menu.js"></script>
     <header>
         <div class="title-logo">
             <a href="/"><h1 >Zona gaming</h1></a>
         </div>
-        <nav>
+        <div class="button-open">
+            <button class="open-menu" id="open" onclick="openButton()">
+                <i class="bi bi-list"></i>
+            </button>
+        </div>
+        <nav class="nav" id="nav">
             <ul>
+                <button class="close-menu" id="close" onclick="closeButton()"><i class="bi bi-x-lg"></i></button>
                 <li><a href="/playstation" class="categories playstation5">Playstation 5</a></li>
-                <li><a href="/Xbox" class="categories xbox">Xbox Series</a></li>
+                <li><a href="/Xbox" class="categories xbox" >Xbox Series</a></li>
                 <li><a href="" class="categories nintendo">Nintendo Swicth</a></li>
                 <li><a href="/logout" class="button-login">Cerrar Sesion</a></li>
             </ul>

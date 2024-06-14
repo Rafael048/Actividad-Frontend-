@@ -374,7 +374,51 @@ footer{
     }
 }
 
-@media (max-width:1010px){
+.open-menu, .close-menu{
+    display: none;
+}
+
+
+@media (max-width:1024px) {
+    .button-open{
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+    }
+    nav >ul{
+        display: flex;
+        flex-direction: column;
+        gap: 3vw;
+        align-items: center;
+        list-style-type: none;
+        padding: 3vw;
+    }
+    .open-menu, .close-menu{
+        display: block;
+        border: 0;
+        font-size: 5vw;
+        background-color: black;
+        color: white;
+    }
+    nav{
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: black;
+        box-shadow: 0 0 0 100vmax rgba(110, 110, 110, 0.753);
+        border-radius: 20px;
+    }
+
+    .nav.visible{
+        opacity: 1 ;
+        width: 25%;
+        visibility: visible;
+        animation-name: menu;
+        animation-duration: .6s;
+    }
+
     .catalogue{
         width: 90%;
     }
@@ -387,12 +431,16 @@ footer{
         font-size: 14px;
     }
 
-    nav{
-        display: none;
-    }
+
 }
 
 @media (max-width:768px){
+    nav > ul{
+        font-size: 14px;
+        gap: 5vw;
+    }
+
+
     footer{
         font-size: 10px;
     }
@@ -418,7 +466,21 @@ footer{
     }
 }
 
-@media (max-width:410px){
+@media (max-width:620px){
+    .nav.visible{
+        width: 40%;
+       }
+}
+
+@media (max-width:425px){
+    nav > ul{
+        font-size: 10px;
+    }
+
+    .nav.visible{
+        width: 40%;
+       }
+
     .title-logo{
         font-size: 2vw;
     }

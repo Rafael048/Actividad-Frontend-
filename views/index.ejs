@@ -11,12 +11,19 @@
     <title>Home</title>
 </head>
 <body>
+    <script src="./javascript/menu.js"></script>
     <header>
         <div class="title-logo">
             <a href="/"><h1 >Zona gaming</h1></a>
         </div>
-        <nav>
+        <div class="button-open">
+            <button class="open-menu" id="open" onclick="openButton()">
+                <i class="bi bi-list"></i>
+            </button>
+        </div>
+        <nav class="nav" id="nav">
             <ul>
+                <button class="close-menu" id="close" onclick="closeButton()"><i class="bi bi-x-lg"></i></button>
                 <li><a href="/playstation" class="categories playstation5">Playstation 5</a></li>
                 <li><a href="/Xbox" class="categories xbox" >Xbox Series</a></li>
                 <li><a href="" class="categories nintendo">Nintendo Swicth</a></li>
@@ -46,7 +53,7 @@
                         ¿Buscas consejos sobre qué consola comprar? ¿Quieres estar al tanto de los próximos lanzamientos de juegos? ¿O quizás simplemente deseas sumergirte en un análisis profundo de tus títulos favoritos? Sea cual sea tu pasión, estamos aquí para satisfacerla.
                     </p>
                 </article>
-                <article class="img-welcome">
+                <article class="img-welcome" id="img-welcome">
                     <img src="./images/logos.png" alt="logo" width="100%">
                 </article>
         </section>
@@ -124,5 +131,6 @@
             </div>
         </div>
 </footer>
+
 </body>
 </html>
