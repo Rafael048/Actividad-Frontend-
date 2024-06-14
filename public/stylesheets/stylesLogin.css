@@ -10,6 +10,7 @@ body{
     background:url(../images/Login.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    font-family:inter ;
 }
 .form-main{
     background-color: rgb(255, 255, 255,0.6);
