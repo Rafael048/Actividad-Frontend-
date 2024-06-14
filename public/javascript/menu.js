@@ -25,3 +25,19 @@ function closeButton() {
 
 }
 
+function openButtonNintendo() {
+    const nav = document.querySelector('#nav')
+    const back = document.querySelector('#back')
+    nav.classList.add("visible")
+    back.classList.add("invisible")
+
+}
+
+function closeButtonNintendo() {
+    const nav = document.querySelector('#nav')
+    const back = document.querySelector('#back')
+    nav.classList.remove('visible')
+    back.classList.remove("invisible");
+
+}
+
