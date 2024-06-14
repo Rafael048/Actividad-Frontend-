@@ -72,4 +72,13 @@ router.get("/xbox",function(req,res,next){
     res.redirect("/401")
   })
   })
+  router.get("/nintendo",function(req,res,next){
+    AutenticationControllers.verify(req.cookies.jwt)
+    .then(()=>{
+      res.render("nintendo")
+    })
+    .catch(()=>{
+      res.redirect("/401")
+    })
+    })
 module.exports = router;
