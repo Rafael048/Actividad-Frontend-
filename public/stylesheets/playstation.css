@@ -35,7 +35,8 @@
     background-position-x: left;
     background-position-y: center;
     background-repeat: no-repeat;
-    background-size:50%;
+    background-size:cover;
+    width: 60%;
 }
 
 .title-games{
@@ -159,7 +160,8 @@
     flex-direction: row;
     gap: 3vw;
     padding: 2vw;
-    width: 85%;
+    width: 90%;
+    text-align: justify;
     flex-wrap: nowrap;
 }
 
@@ -273,7 +275,10 @@
     .image-card{
         width: 50%;
     }
-
+    .title-characteristics{
+        width: 50%;
+        text-align: center;
+    }
     .catalogue{
         flex-direction: column;
         align-items: center;
@@ -285,6 +290,38 @@
 }
 
 @media (max-width:425px){
+
+    .animation-description,
+    .accessories,
+    .characteristics{
+        font-size: 10px;
+    }
+
+    .list{
+        background-color: rgba(255, 255, 255, 0.541);
+        padding: 10px;
+        width: 80%;
+    }
+
+    .container{
+        background: url("../images/muñeco.jpg");
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: top;
+        background-size: cover;
+        padding: 2vw;
+    }   
+
+    .text{
+        display: flex;
+        align-items: center;
+        flex-direction: column;;
+    }
+
+
+    .image-ca{
+        display: none;
+    }
 
     .title-logo{
         font-size: 2vw;
@@ -303,6 +340,6 @@
         width: 100%;
     }
     .card{
-        width: 90%;
+        width: 100%;
     }
 }
