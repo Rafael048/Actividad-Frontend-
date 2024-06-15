@@ -14,42 +14,6 @@ body{
     height: 100vh;
 }
 
-header{
-    display: grid;
-    padding: 10px;
-    background-color: black;
-    color: white;
-    height: 15vh;
-    justify-content: center;
-}
-
-nav{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 20vw;
-}
-
-.categories{
-    padding: 1vw 1vw;
-    text-decoration: none;
-    color: white;
-}
-
-.categories:hover{
-    border-radius: 2vw;
-    transition: all .6s ease;
-    background-color: white;
-    color: black;
-}
-
-ul{
-    display: flex;
-    gap: 4vw;
-    list-style: none;
-    align-items: center;
-    
-}
 b{
     color: red;
 }

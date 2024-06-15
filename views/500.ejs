@@ -6,24 +6,28 @@
     <meta http-equiv="refresh" content="3; URL='/'">
     <link rel="stylesheet" href="./stylesheets/stylesError.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="./stylesheets/stylesFooterHeader.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
     <title>Error 500</title>
 </head>
 <body>
+    <script src="./javascript/menu.js"></script>
     <header>
-
-        <nav>
-            <h1>Zona gaming</h1>
+        <div class="title-logo">
+            <a href="/"><h1 >Zona gaming</h1></a>
+        </div>
+       
+        <nav class="nav" id="nav">
             <ul>
-                <li><a href="/playStation" class="categories">Playstation 5</a></li>
-                <li><a href="/xbox" class="categories">Xbox Series</a></li>
-                <li><a href="/nintendo" class="categories">Nintendo Swicth</a></li>
-           
+                <li><a href="/playstation" class="categories playstation5">Playstation 5</a></li>
+                <li><a href="/Xbox" class="categories xbox" >Xbox Series</a></li>
+                <li><a href="/nintendo" class="categories nintendo">Nintendo Swicth</a></li>
             </ul>
         </nav>
     </header>
+        
     <section>
         <p>
             <b>Error 500</b>: Ha ocurrido un fallo en el servidor al procesar tu solicitud.
