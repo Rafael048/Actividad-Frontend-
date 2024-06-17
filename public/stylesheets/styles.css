@@ -166,6 +166,15 @@ img,.Playstation-overview,.Xbox-overview, .Nintendo-overview{
     }
 }
 
+@media (max-width:600px){
+    .carousel{
+        width: 100%;
+        height: 20vh;
+    }    
+}
+
+
+
 @media (max-width:425px){
     .title{
         font-size: 20px;
