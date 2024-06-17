@@ -89,6 +89,29 @@ body{
     text-align: justify;
 }
 
+.carousel{
+    display: flex;
+    width: 80%;
+    height: 80vh;
+}
+
+.carousel > img{
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: all .5s ease;
+}
+
+.carousel >img:hover{
+    cursor: crosshair;
+    width: 60%;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+
+
 .img-nintendo{
     width: 50%;
 }
